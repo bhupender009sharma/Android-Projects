@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button0"
+            android:tag="hi"
+            android:text="Hi"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="yes_no"
+            android:text="Yes/No"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button2"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="what_is_your_name"
+            android:text="What is your name"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button3"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="thank_you"
+            android:text="Thank You"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button4"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="sorry"
+            android:text="Sorry"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button5"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="my_name_is"
+            android:text="My Name Is"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/button6"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="please"
+            android:text="Please"
+            android:onClick="playPhrase"/>
+
+        <Button
+            android:id="@+id/button7"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:tag="how_are_you"
+            android:text="How Are You"
+            android:onClick="playPhrase"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
